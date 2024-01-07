@@ -9,4 +9,5 @@ phases:
 
 artifacts:
   files:
-    - 'target/*.war'
+     - '**/*'
+  base-directory: 'target/vprofile-v2'
