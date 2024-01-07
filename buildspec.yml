@@ -6,8 +6,9 @@ phases:
       - echo Build completed on `date`
       - mvn install
       - mvn package
+      - mv target/vprofile-v2.war target/ROOT.war
 
 artifacts:
   files:
-     - '**/*'
-  base-directory: 'target/vprofile-v2'
+     - 'ROOT.war'
+  base-directory: 'target'
