@@ -4,8 +4,9 @@ phases:
   build:
     commands:
       - echo Build completed on `date`
+      - mvn install
       - mvn package
 
 artifacts:
   files:
-    - '**/*'
+    - 'target/*.war'
