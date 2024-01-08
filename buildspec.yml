@@ -1,12 +1,16 @@
-version: 0.1
+version: 0.2
 
 phases:
+  install: 
+    runtime-versions:
+      nodejs: 10
   build:
     commands:
-      - echo Build completed on `date`
-      - mvn install
-      - mv target/vprofile-v2.war target/ROOT.war
-
+      - echo "Package & Dependicies are getting installed"
+      - npm -f install
+      - echo "Packages have been installed"
+      - echon "Storing Build Artifact to the Location"
 artifacts:
-  files:
-     - '**/*'
+  type: zip
+  paths:
+    - '*'
