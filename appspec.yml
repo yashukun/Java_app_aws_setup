@@ -1,0 +1,5 @@
+version: 0.0
+os: linux
+files:
+  - source: s3://artifact-storage-new/Java-app-build/ROOT.war
+    destination: /usr/local/tomcat/webapps/ROOT.war
