@@ -1,8 +1,7 @@
 version: 0.0
-os: linux
 files:
   - source: target/ROOT.war
     destination: /usr/local/tomcat/webapps/ROOT.war
 hooks:
   BeforeInstall:
-    
+    location: beforeinstall.sh
