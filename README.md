@@ -1,2 +1,2 @@
-# Java_app_aws_setup
-Java app aws setup Test1
+# node_app_aws_setup
+node app aws setup Test1
