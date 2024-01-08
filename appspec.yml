@@ -1,7 +1,12 @@
 version: 0.0
+os: linux
 files:
-  - source: target/ROOT.war
-    destination: /usr/local/tomcat/webapps/ROOT.war
+  - source: /
+    destination: /home/ubuntu
 hooks:
-  BeforeInstall:
-    location: beforeinstall.sh
+  AfterInstall:
+    - location: afterinstall.sh
+      timeout: 100
+  ApplicationStart:
+    - location: applicationstart.sh
+      timeout: 100
